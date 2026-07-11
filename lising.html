@@ -16,6 +16,18 @@
                 <canvas id='canvas-graph' height=15 width=37></canvas>
             </div>
             <br>
+                    <div>
+<!--<center>-->
+                <input type='button' id='dostep' value='Step'   onclick='update_step()'></input>
+                <input type='button' id='pause' value='Pause'   onclick='update_pause()'></input>
+                <input type='button' id='restart' value='Restart' onclick='update_restart()'></input>
+                <input type='button' id='resetdata' value='Reset data' onclick='init_measurements()'></input>
+                <br>
+                <input type='button' id='downloaddata' value='Download data' onclick='download_measurements()'></input>
+                <input type='button' id='downloadgraph' value='Download graph' onclick='download_graph()'></input>
+                <input type='button' id='downloadgraph' value='Download field' onclick='download_field()'></input>
+ <!--</center>-->                       
+            </div>
     <div id='panelcontainer'>
         <!-- ===================  add control panel items between here ============== -->
         <div id='panel'>
@@ -70,18 +82,7 @@
                 </select>
             </div>
 
-            <div>
-                <center>
-                <input type='button' id='dostep' value='Step'   onclick='update_step()'></input>
-                <input type='button' id='pause' value='Pause'   onclick='update_pause()'></input>
-                <input type='button' id='restart' value='Restart' onclick='update_restart()'></input>
-                <input type='button' id='resetdata' value='Reset data' onclick='init_measurements()'></input>
-                <br>
-                <input type='button' id='downloaddata' value='Download data' onclick='download_measurements()'></input>
-                <input type='button' id='downloadgraph' value='Download graph' onclick='download_graph()'></input>
-                <input type='button' id='downloadgraph' value='Download field' onclick='download_field()'></input>
-                </center>
-            </div>
+
         </div>
 
         <!-- ==========================   and here ================================= -->
